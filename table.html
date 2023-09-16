@@ -1,34 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling Example</title>
+    <style>
+        /* CSS for styling the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* Remove spacing between table cells */
+            margin-bottom: 20px;
+            /* Add spacing at the bottom of the table */
+        }
+
+        /* Style for table headers (th) */
+        th {
+            background-color: #007bff;
+            /* Blue background color */
+            color: #fff;
+            /* White text color */
+            font-weight: bold;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Style for table data cells (td) */
+        td {
+            border: 1px solid #ccc;
+            /* Add a border to cells */
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Add zebra striping for better readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Password</th>
-        </tr>
-        <tr>
-            <td>Hrushikesh</td>
-            <td>email@gmail.com</td>
-            <td>123456789</td>
-        </tr>
-        <tr>
-            <td>Pranali</td>
-            <td>email1@gmail.com</td>
-            <td>1234567890</td>
-        </tr>
-        <tr>
-            <td>Priyanka</td>
-            <td colspan="2">this is colspan</td>
-        </tr>
-        <tr>
-            <td>Priyanka</td>
-            <td colspan="2">this is colspan</td>
-        </tr>
+    <h1>Table Styling Example</h1>
+
+    <!-- Create a table -->
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>State</th>
+                <th>Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mumbai</td>
+                <td>Maharashtra</td>
+                <td>12,478,447</td>
+            </tr>
+            <tr>
+                <td>Delhi</td>
+                <td>Delhi</td>
+                <td>11,034,555</td>
+            </tr>
+            <tr>
+                <td>Bengaluru</td>
+                <td>Karnataka</td>
+                <td>8,443,675</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 

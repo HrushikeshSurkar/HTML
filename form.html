@@ -1,20 +1,100 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>
-        Html form
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        /* Form container styling */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+        }
+
+        /* Input field styling */
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Label styling */
+        label {
+            font-weight: bold;
+        }
+
+        /* Checkbox and radio button styling */
+        .form-checkbox,
+        .form-radio {
+            margin-right: 5px;
+        }
+
+        /* Select menu styling */
+        .form-select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Submit button styling */
+        .form-submit {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the submit button */
+        .form-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    <form>
-        <label>First name:</label><br>
-        <input type="text" id="firstname" name="fname" value="Hrushikesh"><br>
-        <label>Last name:</label><br>
-        <input type="text" id="lastname" name="lname" value="Surkar"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" class="form-radio">
+            <label for="male" class="form-checkbox">Male</label>
+            <input type="radio" id="female" name="gender" value="female" class="form-radio">
+            <label for="female" class="form-checkbox">Female</label>
+
+            <br>
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests[]" value="sports" class="form-checkbox">
+            <label for="sports" class="form-checkbox">Sports</label>
+            <input type="checkbox" id="music" name="interests[]" value="music" class="form-checkbox">
+            <label for="music" class="form-checkbox">Music</label>
+
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" class="form-select">
+                <option value="India">India</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <button type="submit" class="form-submit">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>

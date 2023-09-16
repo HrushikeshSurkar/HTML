@@ -1,28 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Example</title>
+    <style>
+        /* CSS for styling the lists */
+        /* Style for ordered list */
+        ol {
+            list-style-type: decimal;
+            /* Use decimal numbers (default) */
+        }
+
+        /* Style for unordered list */
+        ul {
+            list-style-type: disc;
+            /* Use filled circles (default) */
+        }
+
+        /* Style for list items */
+        li {
+            margin: 5px 0;
+            /* Add spacing between list items */
+        }
+
+        /* Style for definition list */
+        dl {
+            margin: 20px 0;
+            /* Add spacing between definition lists */
+        }
+
+        /* Style for definition term (dt) */
+        dt {
+            font-weight: bold;
+        }
+
+        /* Style for definition description (dd) */
+        dd {
+            margin: 5px 0;
+            /* Add spacing between definition descriptions */
+        }
+    </style>
 </head>
 
 <body>
-    This is Un-Ordered List
-    <ul>
-        <li>Mango</li>
-        <li>Orange</li>
-        <li>Grapes</li>
-        <li>Banana</li>
-    </ul>
-    This is Ordered List
+    <h1>List Example</h1>
+
+    <h2>Ordered List (Decimal Numbers)</h2>
     <ol>
-        <li>Mango</li>
-        <li>Orange</li>
-        <li>Grapes</li>
-        <li>Banana</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
     </ol>
-    This is Description List
-    <dd><br>
-    <dt>Mango</dt>
-    <dd>It is a fruit </dd>
+
+    <h2>Unordered List (Bullets)</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Description for Term 1</dd>
+
+        <dt>Term 2</dt>
+        <dd>Description for Term 2</dd>
+
+        <dt>Term 3</dt>
+        <dd>Description for Term 3</dd>
+    </dl>
 </body>
 
 </html>

@@ -1,15 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Images</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Example</title>
+    <style>
+        /* CSS for styling the image container (optional) */
+        .image-container {
+            max-width: 100%;
+            /* Set the maximum width to the width of the viewport */
+            margin: 20px auto;
+            text-align: center;
+            /* Center-align the images */
+        }
+
+        /* CSS for styling the image itself (optional) */
+        img {
+            max-width: 100%;
+            /* Make the image responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: inline-block;
+            /* Keep the images on the same line */
+            margin: 0 10px;
+            /* Add some space between the images */
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Image Example</h1>
 
-    <img src="https://i.pinimg.com/564x/61/61/0c/61610c33108b6fc55466345d095df4d3.jpg" alt="img1" width="500px"
-        height="500px">
-    <img src="https://i.pinimg.com/564x/3b/50/dc/3b50dcaad1f0d5db693ccd10758bfa75.jpg" alt="img2" width="300px"
-        height="500px">
+    <!-- Container for the images -->
+    <div class="image-container">
+        <!-- First image -->
+        <img src="https://i.pinimg.com/564x/61/61/0c/61610c33108b6fc55466345d095df4d3.jpg" alt="img1" width="500px"
+            height="500px">
+
+        <!-- Second image -->
+        <img src="https://i.pinimg.com/564x/3b/50/dc/3b50dcaad1f0d5db693ccd10758bfa75.jpg" alt="img2" width="300px"
+            height="500px">
+    </div>
 </body>
 
 </html>
